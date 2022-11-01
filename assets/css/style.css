@@ -29,7 +29,7 @@ body {
   }
   
   nav a {
-    color: #b9C6ae;
+    color: #e13201;
     font-weight: bold;
     text-decoration: none;
   }
@@ -85,7 +85,7 @@ body {
     cursor: pointer;
   }
   
-  /* The default appearance is removed and replaced with a custom image */
+  
   select {
     -moz-appearance: none;
     -webkit-appearance: none;
@@ -112,12 +112,12 @@ body {
     box-shadow: 0 0 5px #999;
   }
   
-  /* The right-side border changes when the element is clicked on or tabbed into */
+
   .text-input:focus {
     border-right-width: 5px;
   }
   
-  /* The border becomes dashed when the element's placeholder text is visible */
+  
   .text-input:placeholder-shown {
     border-style: dashed;
   }
@@ -136,13 +136,13 @@ body {
     margin-right: 2%;
   }
   
-  /* The font style of the adjacent element changes when the given element is checked */
+  
   .checkbox:checked + label {
     color: #999999;
     font-style: italic;
   }
   
-  /* When checked, the adjacent element has text insert at the end */
+
   .checkbox:checked + label::after {
     margin-left: 10px;
     font-size: 90%;
