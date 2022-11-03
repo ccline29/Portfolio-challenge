@@ -40,9 +40,9 @@ body {
 
   main {
     display: flex;
-    flex: 1 1 0;
-    max-width: 1200px;
-    margin: 2% auto;
+    /* Forces elements to the next line if they don't fit */
+    flex-wrap: wrap;
+    margin-top: 2%;
   }
   .main-header {
     display: flex;
@@ -54,37 +54,6 @@ body {
     color: #fff;
   }
   
-  article {
-    border-bottom: 1px solid #d8a47f;
-  }
-  
-  article p {
-    margin: 2% 0;
-    font-size: 110%;
-  }
-  
-  article ul {
-    margin-left: 5%;
-    font-size: 110%;
-    list-style: circle;
-  }
-  
-  form {
-    max-width: 400px;
-  }
-  
-  form h3 {
-    font-size: 150%;
-  }
-  
-  form p {
-    margin: 3% 0;
-  }
-  
-  label {
-    display: block;
-  }
-  
   button {
     padding: 1% 2%;
     color: #fff;
@@ -93,83 +62,152 @@ body {
     outline: none;
     cursor: pointer;
   }
-  
-  
-  select {
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    appearance: none;
-    background-image: url("../images/arrow.png");
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: contain;
-  }
-  
-  .text-input {
-    width: 100%;
-    max-width: 100%;
-  }
-  
-  .text-input, select {
-    padding: 1%;
-    outline: none;
-    border: 1.2px solid #b9C6ae;
-  }
-  
-  .text-input:hover, .checkbox:hover, 
-  select:hover, button:hover {
-    box-shadow: 0 0 5px #999;
-  }
-  
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 
-  .text-input:focus {
-    border-right-width: 5px;
-  }
-  
-  
-  .text-input:placeholder-shown {
-    border-style: dashed;
-  }
-  
-  .flex-row {
-    display: flex;
-    align-items: center;
-  }
-  
-  .flex-row select {
-    flex: 1 0 0;
-    margin-left: 2%;
-  }
-  
-  .flex-row input {
-    margin-right: 2%;
-  }
-  
-  
-  .checkbox:checked + label {
-    color: #999999;
-    font-style: italic;
-  }
-  
+body {
+    background-color: #d9dcd6;
+}
 
-  .checkbox:checked + label::after {
-    margin-left: 10px;
-    font-size: 90%;
-    content: "(thanks!)";
-  }
-  
-  footer {
-    display: flex;
-    justify-content: center;
-    padding: 2%;
-    background-color: #13293d;
-    color: #fff;
-  }
-  
-  @media screen and (max-width: 768px) {
-    header {
-      flex-direction: column;
-    }
-  }
+.header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2a607c;
+    color: #f6efef;
+}
+
+.header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+.header h1 .seo {
+    color: #0a0a0a;
+}
+
+.header div {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+.header div ul {
+    list-style-type: none;
+}
+
+.header div ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+a {
+    color: #0c0c0c;
+    text-decoration: none;
+}
+
+p {
+    font-size: 16px;
+}
+
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+
+.content {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.about-me {
+  justify-content: left;
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+.work {
+  justify-content: left;
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+.contact-me {
+  justify-content: center;
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+.resume {
+  margin-bottom: 20px;
+  padding: 50px;
+  height: 300px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #0072bb;
+  color: #ffffff;
+}
+.search-engine-optimization img {
+    max-height: 200px;
+}
+
+.online-reputation-management img {
+    max-height: 200px;
+}
+
+.social-media-marketing img {
+    max-height: 200px;
+}
+
+.about-me h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.work h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.contact-me h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.resume h2 {
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+
+.footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+.footer h2 {
+    font-size: 20px;
+}
   
   
