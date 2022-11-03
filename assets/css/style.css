@@ -105,7 +105,7 @@ body {
 }
 
 a {
-    color: #0c0c0c;
+    color: #080808;
     text-decoration: none;
 }
 
@@ -140,7 +140,7 @@ p {
 }
 
 .work {
-  justify-content: left;
+  justify-content: space-evenly;
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -150,7 +150,7 @@ p {
 }
 
 .contact-me {
-  justify-content: center;
+  justify-content: right;
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;

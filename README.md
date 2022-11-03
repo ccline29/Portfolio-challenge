@@ -1,1 +1,3 @@
-To create a portfolio to be used now and in the future.
+To create a portfolio to showcase work of my skills and talents to potential employers.
+Portfolio highlights what I am capable of completing and the reasoning behind the work. 
+
