@@ -1,72 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
   <meta charset="UTF-8" />
+  <meta http-equiv=""X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Custom Forms with CSS</title>
-  <link rel="stylesheet" href="./assets/css/reset.css" />
   <link rel="stylesheet" href="./assets/css/style.css" />
-</head>
-
+  <title>Jonathan Cline Portfolio</title>
+  </head>
 <body>
-  <header class="main-header">
-        <h1>Jonathan "Chris" Cline</h1>
-    <nav>
-      <ul>
-        <li><button><a href="#about-me">About Me</a></button></li>
-        <li><button><a href="#work">Work</a></button></li>
-        <li><button><a href="#contact-me">Contact Me</a></button></li>
-        <li><button><a href="#resume">Resume</a></button></li>
-      </ul>
-    </nav>
+  <!-- Start Content -->
+  <header>
+    <h1> Chris Cline</h1>
   </header>
-
-  <main>
+  <!--Navbar -->
+  <nav>
+    <ul>
+      <li><a href="#about-me">About Me</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#contact-me">Contact Me</a></li>
+    </ul>
+</nav>
+<!--Main-->
+<main>
+  <!--About Me-->
+  
     <section>
-      <content>
-        <div id="about-me" class="about me" class="float-left">
-            <h2>About Me</h2>
-            <img src="face picture.jpeg" width="100" height="100">
-            <article class="float-right">
-                My name is Jonathan Cline, but I go by Chris. I've spent 20+ years in retail and am looking for a fresh restart in the tech field. 
-                I am currently involved in a University of Texas Bootcamp to learn and develop Front End and Backend Stack Development. 
-                I would eventually like to delve into the Cybersecurity side of the business. 
-
-            </article>
-        </div>
-        <div id="work" class="work" class="float-left">
-            <h3>Work</h3>
-            <article class="work">
-              <img src="https://ccline29.github.io/success-starts-here/" alt="Refractor Code"/>
-              <img src="https://via.placeholder.com/200" alt="Future Work"/>
-              <img src="https://via.placeholder.com/200" alt="Future Work"/>
-              <img src="https://via.placeholder.com/200" alt="Future Work"/>
-            </article>
-        </div>
-        <div id="contact-me" class="contact-me" class="float-left">
-            <h4>Contact Me </h4>
-            <article class="float-center">
-              <ul>
-                <li><strong>Email:</strong> <a href="#">clinechris29@gmail.com</a></li>
-                <li><strong>Github:</strong> <a href="#">sampleName</a></li>
-                </ul>
-            </article>
-        </div>
-        <div id="resume" class="resume" class="float-left">
-            <h5>Resume </h5>
-            <article class="float-right">
-                
-            </article>
-        </div>
-
-      </content>
     </section>
-  </main>
-
-  <footer>
-    <span>Thanks for visiting!</span>
-  </footer>
+    <section class="Rcard">
+      <h2>About Me</h2>
+      <p> My name is Jonathan Cline, but I go by Chris. I've spent 20+ years in retail and am looking for a fresh restart in the tech field. 
+        I am currently involved in a University of Texas Bootcamp to learn and develop Front End and Backend Stack Development. 
+        I would eventually like to delve into the Cybersecurity side of the business.</p>
+      <img class="img-box img-big" src="/Users/chriscline/bootcamp/challenge2/challenge2/challenge2/Images/face picture.jpeg" alt="my profile photo">
+    </section>
+  </section>
+  <!--Work-->
+  <section id="work" class="flex-row">
+    <section>
+      <div class="Lcard">
+        <h2>My Work</h2>
+      </div>
+    </section>
+    <section class="flex-row Rcard">
+      <section class="first-img-box">
+        <h2>Horiseon Refractor Code</h2>
+        <p>Refractored code for greater accesibility</p>
+        <a href="https://ccline29.github.io/success-starts-here/" target="_blank">
+          <img class="img-big" src="/Users/chriscline/bootcamp/challenge2/challenge2/challenge2/Images/Horiseon Refract.png" alt="Horiseon Refract">
+        </a>
+      </section>
+      </section>
+    </section>
+  </section>
+  <!--Contact Me-->
+  <section id="contact-me" class="flex-row">
+    <section>
+      <h2 class="Lcard">Contact Me</h2>
+    </section>
+    <section class="Rcard">
+      <p>916-396-3529</p>
+      <p>clinechris29@gmail.com</p>
+      <p>GitHub https://github.com/ccline29</p>
+    </section>
+  </section>
+</main>
+<footer>
+  <span>Thanks for visiting!</span>
+</footer>
 </body>
-
 </html>
+  
